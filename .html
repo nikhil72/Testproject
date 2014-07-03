@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style> 
+		body
+		{
+
+		background-color:coral;
+
+		}
+	</style>
+
+</head>
+<body>
+		<ul id = "chang">
+			<li>100</li>
+			<li>200</li>
+			<li>300</li>
+			<li>good </li>
+			<li>better</li>
+			<li>best</li>
+			<li>much fun!</li>
+			<li>it's extra fun!</li>
+			<li>extra extra fun!</li>
+			<li>Krina</li>
+			<li>Parul</li>
+			<li>Nikhil</li>
+			<li>Nikhil</li>
+			<li>Nikhil</li>
+			<li>Nikhil</li>
+			<li>Nikhil</li>
+			<li>Arth</li>
+			<li>Archna</li>
+			<li>Gaurang</li>
+		</ul>
+		<button onclick="myFunction()">Try it</button>
+		<button onclick="changName()">nik</button>
+	<script>
+		function myFunction(){
+			var x = document.getElementsByTagName("li");
+					x[0].innerHTML = "New text!";
+					x[1].innerHTML = x[5].innerHTML;
+					document.body.style.background="yellow";
+					x[2].style.textDecoration="line-through";
+					x[3].style.fontStyle="italic";
+					x[4].style.textDecoration="underline";
+					x[5].style.textDecoration="overline";
+					x[6].style.color="red";
+					document.body.style.backgroundColor="lightblue";
+					alert(x[10].innerHTML);
+					x[7].style.fontSize="x-large";
+					
+		}
+		function changName(){
+			var x = document.getElementsByTagName("li");
+			
+				for(i=0;i<x.length;i++){
+			
+					if(x[i].innerHTML=="Nikhil"||x[i].innerHTML=="Arth"||x[i].innerHTML=="Gaurang"){
+						x[i].innerHTML=x[i].innerHTML+"kumar";
+					}else{
+						x[i].innerHTML=x[i].innerHTML;
+					}
+				}
+		
+		}
+		
+	 </script>
+</body>
+
+</html>
